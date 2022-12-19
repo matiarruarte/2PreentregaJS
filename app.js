@@ -1,12 +1,13 @@
 
 function registrar(){
-    function Cliente(nombre,apellido,dni,telefono,fecha,mesesPagos){
+    function Cliente(nombre,apellido,dni,telefono,fecha,mesesPagos, vencimientoMembresia){
         this.nombre=nombre;
         this.apellido=apellido;
         this.dni=dni;
         this.telefono=telefono;
         this.fecha=fecha;
         this.mesesPagos=mesesPagos;
+        this.vencimientoMembresia=vencimientoMembresia;
 
     }
     let nombreRegistro = document.getElementById("nombre").value;
@@ -15,9 +16,10 @@ function registrar(){
     let telefonoRegistro = document.getElementById("tel").value;
     let fechaRegistro = document.getElementById("fecha").value;;
     let mesesPagosRegistro = document.getElementById("cantidadMeses").value;
+    let vencimientoMembresia = fechaFinal;
 
 
-nuevoCliente = new Cliente(nombreRegistro,apellidoRegistro,dniRegistro,telefonoRegistro,fechaRegistro);
+nuevoCliente = new Cliente(nombreRegistro,apellidoRegistro,dniRegistro,telefonoRegistro,fechaRegistro, vencimientoMembresia);
 console.log(nuevoCliente);
 sumaDias(mesesPagosRegistro);
 agregar();
