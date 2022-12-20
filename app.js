@@ -16,12 +16,11 @@ function registrar(){
     let telefonoRegistro = document.getElementById("tel").value;
     let fechaRegistro = document.getElementById("fecha").value;;
     let mesesPagosRegistro = document.getElementById("cantidadMeses").value;
-    let vencimientoMembresia = fechaFinal;
-
-
-nuevoCliente = new Cliente(nombreRegistro,apellidoRegistro,dniRegistro,telefonoRegistro,fechaRegistro, vencimientoMembresia);
+    let vencimientoMembresia = sumaDias(mesesPagosRegistro);
+    
+    
+    nuevoCliente = new Cliente(nombreRegistro,apellidoRegistro,dniRegistro,telefonoRegistro,fechaRegistro,mesesPagosRegistro, vencimientoMembresia);
 console.log(nuevoCliente);
-sumaDias(mesesPagosRegistro);
 agregar();
 }
 
@@ -35,9 +34,10 @@ console.log(momento)
 
 // 2° Función para sumar 1 mes a la membresía
 function sumaDias(meses){
-    fechaVencimiento = moment().add(meses, 'month')
-    fechaFinal = fechaVencimiento.format("DD - MM - YYYY");
-    console.log(fechaFinal)
+    const fechaVencimiento = moment().add(meses, 'month')
+    const fechaFinal = fechaVencimiento.format("DD - MM - YYYY");
+    console.log(fechaFinal);
+    return fechaFinal;
 }
 
 
@@ -47,7 +47,7 @@ let listaClientes = [];
 function agregar(){
     listaClientes.push(nuevoCliente);
     console.log(listaClientes);
-    document.getElementById("listaDeClientes").innerHTML += "<tr><th scope='row'>"+(contadorCliente++)+"</th><td>"+nuevoCliente.nombre+"</td><td>"+nuevoCliente.apellido+"</td><td>"+nuevoCliente.dni+"</td><td>"+nuevoCliente.telefono+"</td><td>"+nuevoCliente.fecha+"</td><td>FULL</td><td>✔ OK</td><td >"+fechaFinal+"</td><td class='tdcenter'>❌<span></span>🛠</td></tr>";
+    document.getElementById("listaDeClientes").innerHTML += "<tr><th scope='row'>"+(contadorCliente++)+"</th><td>"+nuevoCliente.nombre+"</td><td>"+nuevoCliente.apellido+"</td><td>"+nuevoCliente.dni+"</td><td>"+nuevoCliente.telefono+"</td><td>"+nuevoCliente.fecha+"</td><td>FULL</td><td>✔ OK</td><td >"+nuevoCliente.vencimientoMembresia+"</td><td class='tdcenter'>❌<span></span>🛠</td></tr>";
 }
 
 // Buscador de miembros para registrar nuevo pago
