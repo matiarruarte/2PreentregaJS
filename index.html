@@ -62,155 +62,155 @@
           <button type="submit" class="btn btn-primary mb-3" onclick="buscadorDni();">Buscar</button>
         </div>
       </div>
-<div id="resultadoDni"> </div>
+
+      <!-- DESPLEGABLE SI EL SOME DE BUSCAR DA TRUE -->
+<div id="resultadoDni">
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Nombre</label>
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        id="cliente.nombre"
+        placeholder="Juan"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+  <!--  -->
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"
+      >Apellido</label
+    >
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        id="cliente.nombre"
+        placeholder="Diaz"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"
+      >Teléfono</label
+    >
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"          
+        placeholder="2215675643"
+        id="cliente.nombre"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+  <!--  -->
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Plan</label>
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="FULL"
+        id="cliente.nombre"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+  <!--  -->
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"
+      >Estado de membresía</label
+    >
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        id="cliente.nombre"
+        placeholder="✔ OK"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+  <!--  -->
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label"
+      >Vencimiento</label
+    >
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="07/01/2023"
+        id="cliente.nombre"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+  <!--  -->
+
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Paga </label>
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        id="inputPassword"
+        placeholder="Cantidad de meses"
+        value="1"
+      />
+    </div>
+  </div>
+              <!--  -->
+
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Descuento </label>
+                <div class="col-sm-10">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPassword"
+                    placeholder="Descuento en pesos"
+                  />
+                </div>
+              </div>
+  <!--  -->
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Total</label>
+    <div class="col-sm-10">
+      <input
+        type="text"
+        class="form-control"
+        id="cliente.nombre"
+        placeholder="$5200"
+        aria-label="Disabled input example"
+        disabled
+      />
+    </div>
+  </div>
+
+  <!--  -->
+  <div>
+    <button class="btn btn-success">Registrar pago</button>
+    <button class="btn btn-danger">Cancelar</button>
+  </div>
+</div>
+
+
+</div>
     <!--  -->
-    <!-- <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">DNI</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="dni" />
-          <button type="button" class="btn btn-primary">Buscar</button>
-        </div>
-      </div> -->
-      <!--  -->
-  
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Nombre</label>
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            id="cliente.nombre"
-            placeholder="Juan"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
-      <!--  -->
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label"
-          >Apellido</label
-        >
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            id="cliente.nombre"
-            placeholder="Diaz"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label"
-          >Teléfono</label
-        >
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"          
-            placeholder="2215675643"
-            id="cliente.nombre"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
-      <!--  -->
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Plan</label>
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="FULL"
-            id="cliente.nombre"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
-      <!--  -->
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label"
-          >Estado de membresía</label
-        >
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            id="cliente.nombre"
-            placeholder="✔ OK"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
-      <!--  -->
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label"
-          >Vencimiento</label
-        >
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="07/01/2023"
-            id="cliente.nombre"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
-      <!--  -->
-  
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Paga </label>
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            id="inputPassword"
-            placeholder="Cantidad de meses"
-            value="1"
-          />
-        </div>
-      </div>
-                  <!--  -->
-  
-                  <div class="mb-3 row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Descuento </label>
-                    <div class="col-sm-10">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="inputPassword"
-                        placeholder="Descuento en pesos"
-                      />
-                    </div>
-                  </div>
-      <!--  -->
-      <div class="mb-3 row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Total</label>
-        <div class="col-sm-10">
-          <input
-            type="text"
-            class="form-control"
-            id="cliente.nombre"
-            placeholder="$5200"
-            aria-label="Disabled input example"
-            disabled
-          />
-        </div>
-      </div>
 
       <!--  -->
-      <div>
-        <button class="btn btn-success">Registrar pago</button>
-        <button class="btn btn-danger">Cancelar</button>
-      </div>
-</div>
+  
+  
 
       <br><br>
 

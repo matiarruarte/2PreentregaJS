@@ -51,7 +51,10 @@ function agregar(){
 }
 
 // Buscador de miembros para registrar nuevo pago
-const dniEncontrado = listaClientes.some(buscadorDni => nuevoCliente.dni === document.getElementById("dniBuscado").value);
+// const dniEncontrado = listaClientes.some(buscadorDni => nuevoCliente.dni === document.getElementById("dniBuscado").value);
+const valor = document.getElementById("dniBuscado").value
+const dniEncontrado = listaClientes.some((cliente) => cliente.dni === valor );
+console.log(dniEncontrado)
 // function buscadorDni(){
 //     nuevoCliente.dni === document.getElementById("dniBuscado").value
 // }
